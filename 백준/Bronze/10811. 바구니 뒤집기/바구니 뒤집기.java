@@ -14,15 +14,15 @@ public class Main {
         int count = scanner.nextInt();
 
         for (int i = 0; i < count; i++) {
-            int start = scanner.nextInt();
-            int end = scanner.nextInt();
-            int tmp = 0;
-            int dif = end-start;
+            int start = scanner.nextInt()-1;
+            int end = scanner.nextInt()-1;
 
-            for (int j = 0; j < (dif+1)/2; j++) {
-                tmp = basket[end-1-j];
-                basket[end-1-j] = basket[start-1+j];
-                basket[start-1+j] = tmp;
+            while (start < end) {
+             int tmp = basket[end];
+             basket[end] = basket[start];
+             basket[start] = tmp;
+             start++;
+             end--;
             }
         }
 
