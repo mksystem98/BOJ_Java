@@ -25,9 +25,8 @@ public class Main {
             basket[index1-1] = tmp;
         }
 
-        for (int i = 0; i < basket.length-1; i++) {
+        for (int i = 0; i < basket.length; i++) {
             System.out.print(basket[i] + " ");
         }
-        System.out.println(basket[basket.length -1 ]);
     }
 }
