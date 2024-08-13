@@ -4,10 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String word = scanner.next();
-
-        char[] array = word.toCharArray();
-
-        System.out.println((int)array[0]);
+        char character = scanner.next().charAt(0);
+        
+        System.out.println((int)character);
     }
 }
